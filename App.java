@@ -10,16 +10,15 @@ public class App {
     Personagem marcos = new Personagem("Marcos", 50);
     Personagem Joao = new Personagem("João ", 50);
     
-    String[] EscolhaCap01 = new String[]{"avisa que nao deviam ir", "volta pra casa"};
+    String[] EscolhaCap01 = new String[]{"avisa que nao deviam ir","volta pra casa"};
     String[] EscolhaCap02 = new String[]{"tenta ler os papeis", "Abre a porta da casinha"};
     String[] EscolhaCap04 = new String[]{"joga com eles", "decidi que é loucura e vai dormir"};
-    String[] vazia = new String[]{"",""};
 
 
 
                 // DESORGANIZADO PARA UM, VOU NEM DIZZER O NOMEEEEEEEEEEEEEEEEEEEEEE
 Capitulos Cap1 = new Capitulos(
-"-- FINALMENTE FERIAS--\n\n",
+"--FINALMENTE FERIAS--\n\n",
 "Seus país tiveram que fazer uma viagem a trabalho e você teve que\n" +
 "ficar uns dias na casa dos seus avôs. Por coêncidencia, seus tios também\n"+
 "tiveram que viajar e deixaram seus primos na casa dos seus avôs. Infelizmente\n"+
@@ -46,7 +45,7 @@ Joao, 0,EscolhaCap01, leitor);
 rafa, -3, EscolhaCap02, leitor);
 
 Capitulos Cap3 = new Capitulos(
-"-- ELES SABEM DE ALGO--\n\n",
+"--ELES SABEM DE ALGO--\n\n",
 "Você tenta ler os papéis apregados na porta, derepente você\n" + // resposta a do cap 2
 "senti um empurrão, marcos te empurrou pra dentro com toda a força\n" +
  "fazendo você cair no chão, como a casa é pequena, você bate nas ferramenta\n"+
@@ -63,10 +62,10 @@ Capitulos Cap3 = new Capitulos(
 "ouvem e vão correndo ver o que aconteceu, quando chegam eles veem você segurando o cabo da enxada\n"+
 "o seu avô olha se marcos ainda ta vivo e sua avó vai acudir suas primas, eles olham pra você\n"+
 "como se soubessem de algo...",
-rafa, -50,vazia, leitor);
+rafa, -50,null, leitor);
 
 Capitulos Cap4 = new Capitulos(
-"-- CORAGEM --\n\n",
+"--CORAGEM --\n\n",
 "Quando você abre a porta todos ficam felizes com sua coragem e entram vasculhando\n" +
 "a casa, acham ferramentas de trabalho, ração de animais, sua prima rafa acha um jogo\n"+
 "de tabuleiro em cima da prateleira, ela pega e ver que o nome é Ouija, na descrição diz que\n"+
@@ -86,10 +85,10 @@ Capitulos Cap5 = new Capitulos(
 "coisas sinistras...\n\n" + "VOU AMAR ESFOLAR VOCÊS VIVOS\n\n" +
 "os olhos de julia ficam negros e os corpos dos meninos são jogados na parede\n\n"+
 "VOCÊS VÃO MORREEER!!!!!",
-Joao, -50,vazia, leitor);
+Joao, -50,null, leitor);
 
 Capitulos Cap6 = new Capitulos(
-"-- O MAL SE REVELA-- \n\n",
+"--O MAL SE REVELA-- \n\n",
 "Você tem medo de coisas que falam de espiritos, porque acha que eles vão puxar o seu pé\n"+
 "você decidi ir dormir, antes que seus avôs descubram que estavam fazendo coisa errada\n\n"+
 "OUTRO DIA...\n\n" +
@@ -98,7 +97,7 @@ Capitulos Cap6 = new Capitulos(
 "sem a pele e pingando sangue embaixo deles estava escrito 'QUE DELICIA BRUNO', bruno é seu avó\n"+
 "e o tabuleiro estava com as peças em cima da mesa, você fica sem entender nada, começou a ficar apavorado\n"+
 "achando que seu avó tinha matado seu primos...",
-Joao, -50,vazia, leitor);
+Joao, -50,null, leitor);
 
 System.out.println("Capítulo 1");
 System.out.println();
@@ -106,35 +105,48 @@ Cap1.mostrar();
 int erro = Cap1.escolher();
 
                 // TO CONFUSO PQP EM
-if (erro == 1) 
+if (erro == 0) 
 {
-       Cap2.mostrar();
+        System.out.println("Capítulo 2");
+        System.out.println();
+        Cap2.mostrar();
         erro = Cap2.escolher();
 
-if (erro == 1) 
+if (erro == 0) 
 {
+        System.out.println("Capítulo 3");
+        System.out.println();
         Cap3.mostrar();
         erro = Cap3.escolher();
 }
 
-if (erro == 2) 
+if (erro == 1) 
 {
+        System.out.println("Capítulo 4");
+        System.out.println();
         Cap4.mostrar();
         erro = Cap4.escolher();               
 }
-if (erro == 1)
+
+if (erro == 0)
 {
+        System.out.println("Capítulo 5");
+        System.out.println();
         Cap5.mostrar();                 
 }
-if (erro == 2) 
+
+if (erro == 1) 
 {
+        System.out.println("Capítulo 6");
+        System.out.println();
         Cap6.mostrar();                   
 }
 
-}else if (erro == 2) 
+}else if (erro == 1) 
 {
-Cap6.mostrar();
-
+        System.out.println("Capítulo 6");
+        System.out.println();
+        Cap6.mostrar();
 }
 
 

@@ -13,7 +13,7 @@ public class Personagem {
     {
         if (coragem < 50) 
         {
-            System.out.println("O medo tomou conta " + this.name + " e então perde " + coragem + " de coragem");
+            System.out.println("O medo tomou conta " + this.name + " e então perde " + coragem + " de coragem\n");
         }
         this.medo = medo + coragem;
         if (this.medo > 50) 
@@ -23,7 +23,7 @@ public class Personagem {
         else if (this.medo < 0) 
         {
             this.medo = 0;
-            System.out.println(this.name + " entrou em pânico e o terror tomou de conta do corpo dele");
+            System.out.println(this.name + " entrou em pânico e o terror tomou de conta do corpo dele\n");
         }
 
     }

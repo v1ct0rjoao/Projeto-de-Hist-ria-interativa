@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 public class Capitulos {
-    private String nome;
-    private String texto;
+    public String nome;
+    public String texto;
     private Personagem personagem;
     public int modificadordecoragem;
-    private String[] escolha; // lembra de ajeitar pra string, boolean ta dando treta no metodo escolher
+    public String[] escolha; // lembra de ajeitar pra string, boolean ta dando treta no metodo escolher
     public Scanner leitor; // ai me quebrou
     
 
@@ -31,34 +31,39 @@ public class Capitulos {
         this.personagem.modificadordecoragem(this.modificadordecoragem);
         }
 
-    
+        
         if(this.escolha != null)
         {
 
             for (String escolha : escolha) 
             {
-                System.out.println();
+                
                 System.out.println(escolha);
-           
+                
             }   
         }
     }
 
-    public int escolher() 
-{
+    public int escolher()
+    {
+
         int erro = -1;
         if (escolha != null) 
     {
  // MMMMDSSSSS VELHO COMO A JEITA ESTA MERDA
-        String resposta = leitor.nextLine();
         while(erro == -1)
         {   
-            for (String escolha : escolha) 
+            
+            System.out.println("\n\nResposta: ");
+            String resposta = leitor.nextLine();
+          
+           for (String escolha : escolha) 
             {
                 int incrementador = 0;
                 if (resposta.equals(escolha)) 
                 {
                     erro = incrementador;
+                                    
                 }
                 incrementador++;
             }
@@ -67,3 +72,5 @@ public class Capitulos {
         return erro;
  }
 }
+        
+    
