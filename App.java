@@ -113,6 +113,7 @@ Cap4.escolhas.add(new Escolha("decidi que é loucura e vai dormir", Cap6));
 
 System.out.println("Capítulo 1");
 System.out.println();
+//odeio arvores
 Capitulo cabeca = Cap1;
 cabeca.mostrar();
 
