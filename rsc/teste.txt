@@ -1,0 +1,10 @@
+   PERSONAGENS DOS CAPITULO 1
+   PERSONAGEM 1.
+   - Nome: rafa
+   - Medo: 50
+   PERSONAGEM 2.
+   - Nome: marcos
+   - Medo: 50
+   PERSONAGEM 3.
+   - Nome: Joao
+   - Medo: 50

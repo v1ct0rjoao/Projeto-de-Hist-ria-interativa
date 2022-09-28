@@ -2,7 +2,6 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.CloseAction;
 
 public class Capitulo {
     public String nome;
@@ -45,11 +44,8 @@ public class Capitulo {
             int Esc = escolher();
             this.escolhas.get(Esc).proximo.mostrar();
         } 
-
     
-       
     }
-
     public int escolher() {
 
         int erro = -1;
