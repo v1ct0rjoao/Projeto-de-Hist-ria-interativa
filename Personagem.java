@@ -27,4 +27,10 @@ public class Personagem {
         }
 
     }
+
+public static void add(String personagemescrito, Personagem personagem) {
+}
+
+public static void put(String personagemescrito, Personagem personagem) {
+}
 }

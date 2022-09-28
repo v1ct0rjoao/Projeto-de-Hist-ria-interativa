@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.Scanner;
 
 import javax.crypto.spec.ChaCha20ParameterSpec;
@@ -8,9 +9,7 @@ public class App {
         public static void main(String[] args) {
                 Scanner leitor = new Scanner(System.in);
                 
-    Personagem rafa = new Personagem("Rafa", 50);
-    Personagem marcos = new Personagem("Marcos", 50);
-    Personagem Joao = new Personagem("João ", 50);
+
     
 //     String[] EscolhaCap01 = new String[]{"avisa que nao deviam ir","volta pra casa"};
 //     String[] EscolhaCap02 = new String[]{"tenta ler os papeis", "Abre a porta da casinha"};
@@ -18,6 +17,15 @@ public class App {
 
 // cap1.escolha.add(new Escolha( "avisa que nao deviam ir", Cap2))
 
+Personagem rafa = new Personagem("Rafa", 50);
+Personagem marcos = new Personagem("Marcos", 50);
+
+Servidordedados escrito = new Servidordedados();
+ HashMap<String, Personagem> personagens = escrito.SelectPersonagem("rsc/teste.txt");
+
+ Personagem Joao = personagens.get("Joao");
+ Personagem Rafa = personagens.get("Rafa");
+ Personagem Marcos = personagens.get("Marcos");
 
 Capitulo Cap1 = new Capitulo(
 "--FINALMENTE FERIAS--\n\n",

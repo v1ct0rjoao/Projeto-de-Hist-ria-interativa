@@ -51,6 +51,8 @@ public class Capitulo {
         int erro = -1;
         if (escolhas != null) {
             // MMMMDSSSSS VELHO COMO A JEITA ESTA MERDA
+
+          
             while (erro == -1) {
 
                 System.out.println("\n\nResposta: ");
